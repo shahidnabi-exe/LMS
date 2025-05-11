@@ -1,9 +1,17 @@
-import React from 'react'
+import { createContext } from "react";
 
-function AppContext() {
+const AppContext = createContext();
+
+export const AppContextProvider = (props) => {
+  const value = {
+    // Add your global state or methods here
+  };
+
   return (
-    <div>AppContext</div>
-  )
-}
+    <AppContext.Provider value={value}>
+      {props.children}
+    </AppContext.Provider>
+  );
+};
 
-export default AppContext
+export default AppContext;
