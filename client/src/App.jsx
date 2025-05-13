@@ -22,7 +22,7 @@ function App() {
 
   return (
     
-      <div className='text-default min-h-screen bg-white'>
+      <div className='text-default min-h-screen bg-white w-full'>
         {!isEducatorRoute && <Navbar /> }
         
         <Routes>
